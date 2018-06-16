@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyper Code</title>
+    <script src="hyper.js"></script>
+    <link rel="stylesheet" href="hyper.css">
+
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+        
+    li {
+        float: left;
+    }
+        
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+        
+    li a:hover {
+        background-color: #111;
+    }
+    .button5 { /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+    }
+
+    .button5:hover {
+        background-color: #555555;
+        color: white;
+ 
+    }
+    hr{
+        width:900px;
+    }
+    </style>
+</head>
+<body> 
+   
+        
+        
+        <ul>
+          <li><a class="/" href="#">홈</a></li>
+          <li><a href="#news">Dok 뉴스</a></li>
+          <li><a href="#contact">dok 시작하기</a></li>
+          <li><a href="#about">제작자</a></li>
+          <li style="float:right;"><a href="#upload">패키지 올리기</a></li>
+        </ul>
+        <div id="about">
+            {%center%}
+                {%color=BLACK%}
+            
+                    {% font=50px %}
+                        <p></p>
+                        Dok 
+                    {% font=25px %}
+                        {%color=lightseagreen%}
+                            2.0  
+                        {% exit %}
+                    {% exit %}
+                {% exit %}
+                {% font=30px%}
+                    {%color=lightslategray%}
+                        <p>Dok를 사용하면 필요한 파일 또는 귀찮은 <br>
+                        파일을 빠르고 순식간에 만들수 있다.<br>
+                        </p>
+                    {% exit %}
+                {% exit %}
+              `dok install [FileName]` 로 파일 또는 패키지 다운이 가능합니다.
+              <p>
+                <a href="//download">
+              <button class="button5">Dok 터미널 다운하기</button>
+                </a>
+                <br><br><br><br><br><br><br><br>
+              <hr>
+              <p>copyright by boat on boat and 모아 <br>
+              -dok 2.0- </p>
+            </a>
+            {% /div %}
+        </div>
+</body>
+</html> 
